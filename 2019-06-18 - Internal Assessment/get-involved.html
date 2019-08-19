@@ -33,7 +33,8 @@
 				<p id="info">Teacher in charge of the Onslow Enviro Group: Jan Szydlowski <br>Email enviro@onslow.school.nz if you want to find out more about enviro projects this year or want to make any helpful suggestions.</p>
 				<!-- If I were to do this again I think I would rather make the inputs using <form> that way I would be able to clear both inputs using a button and javascript -->
 				<input id="send" type="text" placeholder="Full Name" maxlength="50">
-				<input id="send" type="text" placeholder="Email Address" maxlength="50">
+				<input id="send" type="email" placeholder="Email Address" maxlength="50">
+				<input id="comment" type="text" placeholder="Comment" cols="30" rows="5" maxlength="300">
 				<!-- Button code soursed from: https://www.w3schools.com/howto/howto_html_clear_input.asp -->
 				<!-- Using this button code it allows the user to see what it would look like to send their "Full Name" and "Email Address" if they wanted to get incolved with the envirogroup -->
 				<button onclick="document.getElementById('send').value = ''">Send</button>
@@ -52,7 +53,7 @@
             	</ul>
 			</nav>
 			<hr id="footer-breaker">
-			<a href="https://goo.gl/maps/jo5efvuykzZrzpNSA" target="_blank"><p>Burma Rd, Johnsonville, Wellington 6035</p></a>
+			<a id="link" href="https://goo.gl/maps/jo5efvuykzZrzpNSA" target="_blank"><p>Burma Rd, Johnsonville, Wellington 6035</p></a>
 			<a class="back-to-top" href="#"><i class="fas fa-chevron-up"></i></a>
 		</footer>
 

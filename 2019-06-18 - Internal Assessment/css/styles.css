@@ -1,9 +1,9 @@
 
 
-/*Nav Bar*/
 html {
     margin: 0px auto;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 body {
@@ -42,8 +42,7 @@ hr {
    width: 99%;
 }
 
-nav{
-}
+/*Nav Bar*/
 
 nav img {
     max-height: 50px;
@@ -111,6 +110,7 @@ nav img {
 .dark-layer {
    background-color: rgb(0, 0, 0, 0.2);
    position: relative;
+
 }
 
 .main img {
@@ -128,6 +128,7 @@ p {
    background-image: url(../img/background.png);
    background-repeat: no-repeat;
    background-size: 100vw auto;
+   overflow: hidden;
    margin: 0;
 }
 
@@ -279,13 +280,16 @@ p {
    margin: 0 15%;
 }
 
+.project-location .fa-map-marker-alt {
+   font-size: 28px;
+}
+
 .project-location a {
    position: absolute;
    font-family: 'Open Sans', sans-serif;
    font-size: 22px;
    font-weight: 400;
    color: white;
-   width: 157.859px;
    margin: 0 15px;
 }
 
@@ -293,22 +297,27 @@ p {
    background-color: white;
 }
 
-.project-location .fa-map-marker-alt {
-   font-size: 28px;
+#filler {
+   position: relative;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 22px;
+   margin: 0px -5px;
 }
 
 .project-article {
    font-family: 'Open Sans', sans-serif;
-   font-size: 18px;
-   margin: 0 15%;
+   font-size: 20px;
+   margin: 4% 15%;
 }
 
 .project-article p {
-   font-size: 18px;
+   font-size: 20px;
+   margin-bottom: 0px;
 }
 
 .project-article ul {
    padding: 0 0 0 20px;
+   margin-top: 10px;
 }
 
 .project-article li {
@@ -347,7 +356,7 @@ p {
    margin: 1.8em 25%;
 }
 
-.get-involved input[type=text] {
+.get-involved input[type=text], input[type=email] {
    display: inline-block;
    width: 50%;
    font-size: 20px;
@@ -358,6 +367,10 @@ p {
    transition: 0.3s;
    margin: 8px 25%;
    padding: 8px;
+}
+
+#comment {
+   /* padding: 8px 8px 50px 8px; */
 }
 
 .get-involved button {
@@ -376,10 +389,19 @@ p {
 
 .get-involved button:hover {
    text-decoration: underline;
-   transition: 0.3s;
 }
 
 /* Footer CSS */
+
+footer {
+   position: relative;
+   text-align: center;
+}
+
+#footer-divider {
+   margin: 0px auto;
+   width: 100%;
+}
 
 footer p {
    font-family: 'Open Sans', sans-serif;
